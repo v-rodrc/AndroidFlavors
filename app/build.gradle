@@ -21,19 +21,31 @@ android {
         }
     }
 
-    flavorDimensions "icecream"
+    flavorDimensions "icecream", "fruits"
     productFlavors {
         strawberry {
             dimension "icecream"
-            //applicationIdSuffix ".strawberry"
+            applicationIdSuffix ".strawberry"
         }
         chocolate {
             dimension "icecream"
-            //applicationIdSuffix ".chocolate"
+            applicationIdSuffix ".chocolate"
         }
         vanilla {
             dimension "icecream"
-            //applicationIdSuffix ".vanilla"
+            applicationIdSuffix ".vanilla"
+        }
+        apple {
+            dimension "fruits"
+            applicationIdSuffix ".apple"
+        }
+        orange {
+            dimension "fruits"
+            applicationIdSuffix ".orange"
+        }
+        bannana {
+            dimension "fruits"
+            applicationIdSuffix ".bannana"
         }
 
     }
