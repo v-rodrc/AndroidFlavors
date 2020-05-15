@@ -3,7 +3,8 @@ echo "listingdirectory"
 ls
 echo "listingenvironmentvariables"
 printenv
-echo "searchforgradlew"
-find / iname gradlew -type f
+echo "movetoappcentersourcedirectory"
+cd $APPCENTER_SOURCE_DIRECTORY
+ls 
 echo "beginbuild"
 ./gradlew bundleChocolateApple --debug
