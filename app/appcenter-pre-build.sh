@@ -9,5 +9,6 @@ ls
 echo "beginbuild"
 ./gradlew bundleChocolateApple
 echo "afterbuild"
-find ./app *.aab
+find ./app/build/outputs/bundle *.aab
+echo "the line above shows where the output file is"
 
