@@ -5,6 +5,9 @@ echo "listingenvironmentvariables"
 printenv
 echo "movetoappcentersourcedirectory"
 cd $APPCENTER_SOURCE_DIRECTORY
-ls 
+ls
 echo "beginbuild"
-./gradlew bundleChocolateApple --debug
+./gradlew bundleChocolateApple
+echo "afterbuild"
+find ./app *.aab
+
