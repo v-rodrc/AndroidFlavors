@@ -21,7 +21,7 @@ android {
         }
     }
 
-    flavorDimensions "icecream", "fruits"
+    flavorDimensions "icecream"//, "fruits"
     productFlavors {
         strawberry {
             dimension "icecream"
@@ -35,18 +35,18 @@ android {
             dimension "icecream"
             applicationIdSuffix ".vanilla"
         }
-        apple {
-            dimension "fruits"
-            applicationIdSuffix ".apple"
-        }
-        orange {
-            dimension "fruits"
-            applicationIdSuffix ".orange"
-        }
-       bannana {
-            dimension "fruits"
-            applicationIdSuffix ".bannana"
-       }
+//        apple {
+//            dimension "fruits"
+//            applicationIdSuffix ".apple"
+//        }
+//        orange {
+//            dimension "fruits"
+//            applicationIdSuffix ".orange"
+//        }
+//       bannana {
+//            dimension "fruits"
+//            applicationIdSuffix ".bannana"
+//       }
 
     }
 }
