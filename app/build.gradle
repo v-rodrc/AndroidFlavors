@@ -21,32 +21,27 @@ android {
         }
     }
 
-    flavorDimensions "icecream"//, "fruits"
+    flavorDimensions "company", "country"
     productFlavors {
-        strawberry {
-            dimension "icecream"
-            applicationIdSuffix ".strawberry"
+        google {
+            dimension "company"
+            applicationIdSuffix ".google"
         }
-        chocolate {
-            dimension "icecream"
-            applicationIdSuffix ".chocolate"
+        apple {
+            dimension "company"
+            applicationIdSuffix ".apple"
         }
-        vanilla {
-            dimension "icecream"
-            applicationIdSuffix ".vanilla"
+
+        france {
+            dimension "country"
+            applicationIdSuffix ".france"
+       }
+
+        germany {
+            dimension "country"
+            applicationIdSuffix ".germany"
         }
-//        apple {
-//            dimension "fruits"
-//            applicationIdSuffix ".apple"
-//        }
-//        orange {
-//            dimension "fruits"
-//            applicationIdSuffix ".orange"
-//        }
-//       bannana {
-//            dimension "fruits"
-//            applicationIdSuffix ".bannana"
-//       }
+
 
     }
 }
@@ -60,3 +55,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+
